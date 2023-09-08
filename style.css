@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@400;600&family=Prata&display=swap');
+
+:root {
+    --branco-principal:#FFFFFF; 
+    --cinza-secundaria:#C0c0c0;
+    --botao-azul:#167bf7;
+    --cor-de-fundo:#00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.conteiner {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.conteiner__botao {
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.conteiner__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundaria);
+}
+
+.conteiner__titulo {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.conteiner__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.conteiner__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundaria);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.conteiner__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape__logo {
+    padding: 1.5em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 1em;
+}
+
+.lista__link {
+    list-style-type: none;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.lista__link__item {
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-size: 16px;
+}
+
+.rodape__texto {
+    color: var(--cinza-secundaria);
+    font-size: 14px;
+    text-align: center;
+    margin: 0 1em;
+    margin-bottom: 2em;
+}
+
+.conteiner__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+
+
